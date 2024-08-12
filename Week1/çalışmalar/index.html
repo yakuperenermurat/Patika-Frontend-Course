@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Attributes</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <h1>HTML Attributes</h1>
+    
+    <h2>HTML Global Attributes</h2>
+    
+    <h3>The <code>class</code> Attribute</h3>
+    
+    <p class="foo bar"> CSS ve JavaScript ile etkileşimde bulunması için sınıflandırılmıştır.</p>
+    
+    <h3>The <code>contenteditable</code> Attribute</h3>
+    <p contenteditable="true">Bu düzenlenebilir bir paragraftır.</p>
+
+    <h3>The <code>data-*</code> Attribute</h3>
+
+    <p data-name="John" data-uuid="d05762">Kullanıcı Öğesi</p>
+
+    <h3>The <code>dir</code> Attribute</h3>
+
+    <p dir="rtl">Bu metin sağdan sola doğru yazın!</p>
+
+    <h3>The <code>id</code> Attribute</h3>
+
+    <p id="uniq-id">Benzersiz bir kimliğe sahip paragraf.</p>
+
+    <h3>The <code>lang</code> Attribute</h3>
+
+    <p lang="en" style="text-transform: uppercase;">This is a paragraph.</p>
+
+    <h3>The <code>title</code> Attribute</h3>
+
+    <p title="İhtiyacınız olan eğitimler için Patika.dev'i ziyaret edin">patika.dev</p>
+
+    <h3>The <code>translate</code> Attribute</h3>
+
+    <p translate="no">Don't translate this!</p>
+
+    <h2>HTML Global Attributes</h2>
+
+    <h3>The <code>img</code> Attribute</h3>
+
+    <img src ="./assert/kızkulesi.png" alt="Kız kulesi" width="300" height="175">
+
+    <h3>The <code>video</code> Attribute</h3>
+    
+    <video src="https://youtu.be/no7LCcGTvn8?t=1" controls autoplay muted></video>
+
+    <h2>The <code>&lt;p&gt;</code>Element</h2>
+    <p>Bu bir paragraftır.</p>
+    <p>Bu başka bir paragraftır.</p>
+
+    <h2>The <code>&lt;br&gt;</code>Element</h2>
+    <p>Bu satır kestirmesi olan <br> bir paragraftır.</p>
+
+    <h2>The <code>&lt;pre&gt;</code>Element</h2>
+    <pre>
+        Yıldızlarla süslenmiş gece gökyüzü,
+
+        Aydın ışığıyla aydınlanıyor.
+
+        Kokusuyla sarhoş eden çicekler,
+
+        Doğanın kollarında huzurla uyuyorlar.
+    </pre>
+
+    <h2>The <code>&lt;b&gt;</code>Element</h2>
+    <b>Bu metin kalındır</b>
+
+    <h2>The <code>&lt;strong&gt;</code>Element</h2>
+    <strong>Bu metin önemini önemlidir!</strong>
+
+    <h2>The <code>&lt;i&gt;</code>Element</h2>
+    <i>Bu metin italiktir</i>
+
+    <h2>The <code>&lt;em&gt;</code>Element</h2>
+    <em>Bu metin vurgulanmıştır</em>
+
+    <h2>The <code>&lt;small&gt;</code>Element</h2>
+    <p>Bu biraz daha küçük bir metin.</p>
+    <small>Bu biraz daha küçük bir metin.</small>
+
+    <h2>The <code>&lt;mark&gt;</code>Element</h2>
+    <p>Bugün <mark>süt</mark> almayı unutma.</p>
+
+    <h2>The <code>&lt;del&gt;</code>Element</h2>
+    <p>Ensevdiğim renk <del>mavidir</del>.</p>
+
+    <h2>The <code>&lt;ins&gt;</code>Element</h2>
+    <p>Ensevdiğim renk <ins>mavidir</ins>.</p>
+
+    <h2>The <code>&lt;sub&gt;</code>Element</h2>
+    <p>Ensevdiğim renk <sub>mavidir</sub>.</p>
+
+    <h2>The <code>&lt;sup&gt;</code>Element</h2>
+    <p>Ensevdiğim renk <sup>mavidir</sup>.</p>
+
+    <h1>HTML Links</h1>
+
+    <h2>Example</h2>
+    <p><a href="https://www.patika.dev">Patika.dev'i ziyaret et</a></p>
+
+    <h2>HTML Links Attributes</h2>
+
+    <h3>The <code>target</code> Attribute</h3>
+    <p><a href="https://www.patika.dev" target="_self">Bağlantıyı mevcut pencere/sekmede aç</a></p>
+    <p><a href="https://www.patika.dev" target="_blank">Bağlantıyı yeni bir pencere/sekmede aç</a></p>
+
+    <h2>Absolute URLs vs. Relative URLs</h2>
+
+    <h3> Absolute URLs</h3>
+    <p>><a href="https://www.apple.com">Apple</a></p>
+    <p>><a href="https://www.google.com">Google</a></p>
+
+    <h3> Relative URLs</h3>
+    <p>><a href="./index.html">Bağlantılar sayfası</a></p>
+
+    <h2>URI Schema</h2>
+    <p><a href="mailto:ornek@example.com">E-posta Gönder</a></p>
+    <p><a href="tel:+90500142356">Telefon ile Ara</a></p>
+    <p><a href="sms:+90500442152?body=Merhaba!">SMS Gönder</a></p>
+
+    <h2>Bookmarks</h2>
+    <p><a href="#chapter1">Bölüm 1'e atla</a></p>
+    <p><a href="#chapter2">Bölüm 2'e atla</a></p>
+    <p><a href="#chapter3">Bölüm 3'e atla</a></p>
+
+    <h3 id="chapter1">Bölüm 1</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias exercitationem voluptas quisquam animi cupiditate tempora voluptatum dolorum qui vitae id totam corrupti dicta debitis possimus, odit eos. Vitae, voluptates possimus.</p>
+    <p>Voluptatum perspiciatis voluptate voluptas nulla suscipit expedita voluptatem quidem ea excepturi? Esse veniam error, libero doloribus ad magnam aut nisi modi quis ex eum ipsa mollitia cumque similique provident nulla?</p>
+    <p>Sunt, nulla explicabo amet, magni officia aperiam veniam aliquid rem ut iste dolorem consequatur eum voluptate architecto blanditiis, ullam eligendi fuga? Non, voluptatem. Vero aut ipsum at veniam modi consequatur?</p>
+    <p>Ducimus temporibus fugit enim suscipit qui. A eos molestias saepe tempore voluptatem odio cumque fugit assumenda quidem blanditiis. Recusandae blanditiis provident voluptates assumenda quos eum eligendi, aut eos tempore in.</p>
+    <p>Velit, odit magnam saepe vel, quis dolores harum odio aperiam consectetur quos mollitia architecto! Atque aliquid nostrum nobis tempore ab vel, a recusandae quod, iusto ullam dolore? Ad, soluta accusantium.</p>
+    <p>Consequuntur cumque tenetur incidunt vero veritatis, blanditiis, ad voluptates magnam illum totam labore ex repudiandae eligendi? Impedit facere suscipit, asperiores nobis vel ex, omnis quod labore, ipsam harum at dignissimos!</p>
+    <p>Itaque est ratione voluptatibus id et, perferendis architecto perspiciatis maiores aliquid eaque quam debitis aut enim voluptatem doloremque iusto dolorem possimus delectus atque odio nihil. Tempore voluptatum minima in perspiciatis!</p>
+    <p>Maiores numquam ea suscipit minima eveniet voluptatum repellat sit quia, eius voluptas perferendis hic asperiores ratione qui id tempora! Fuga quod quam perspiciatis perferendis distinctio eius sapiente, mollitia qui deleniti?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias exercitationem voluptas quisquam animi cupiditate tempora voluptatum dolorum qui vitae id totam corrupti dicta debitis possimus, odit eos. Vitae, voluptates possimus.</p>
+    <p>Voluptatum perspiciatis voluptate voluptas nulla suscipit expedita voluptatem quidem ea excepturi? Esse veniam error, libero doloribus ad magnam aut nisi modi quis ex eum ipsa mollitia cumque similique provident nulla?</p>
+    <h3 id="chapter2">Bölüm 2</h3>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, culpa iure cupiditate quisquam delectus eaque saepe! Odio, optio consectetur fugiat assumenda molestias ex consequuntur, quisquam, vel iusto doloremque aut eos?</p>
+<p>Quod quidem amet consequatur, mollitia quis consequuntur quibusdam, maxime ad obcaecati in ratione blanditiis illo dolor excepturi impedit vero odit aliquam eligendi. Eaque ad earum reprehenderit consequuntur sit odit accusantium?</p>
+<p>Consequuntur cumque tenetur incidunt vero veritatis, blanditiis, ad voluptates magnam illum totam labore ex repudiandae eligendi? Impedit facere suscipit, asperiores nobis vel ex, omnis quod labore, ipsam harum at dignissimos!</p>
+<p>Itaque est ratione voluptatibus id et, perferendis architecto perspiciatis maiores aliquid eaque quam debitis aut enim voluptatem doloremque iusto dolorem possimus delectus atque odio nihil. Tempore voluptatum minima in perspiciatis!</p>
+<p>Maiores numquam ea suscipit minima eveniet voluptatum repellat sit quia, eius voluptas perferendis hic asperiores ratione qui id tempora! Fuga quod quam perspiciatis perferendis distinctio eius sapiente, mollitia qui deleniti?</p>
+<p>Consequuntur cumque tenetur incidunt vero veritatis, blanditiis, ad voluptates magnam illum totam labore ex repudiandae eligendi? Impedit facere suscipit, asperiores nobis vel ex, omnis quod labore, ipsam harum at dignissimos!</p>
+<p>Itaque est ratione voluptatibus id et, perferendis architecto perspiciatis maiores aliquid eaque quam debitis aut enim voluptatem doloremque iusto dolorem possimus delectus atque odio nihil. Tempore voluptatum minima in perspiciatis!</p>
+<p>Maiores numquam ea suscipit minima eveniet voluptatum repellat sit quia, eius voluptas perferendis hic asperiores ratione qui id tempora! Fuga quod quam perspiciatis perferendis distinctio eius sapiente, mollitia qui deleniti?</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias exercitationem voluptas quisquam animi cupiditate tempora voluptatum dolorum qui vitae id totam corrupti dicta debitis possimus, odit eos. Vitae, voluptates possimus.</p>
+<p>Voluptatum perspiciatis voluptate voluptas nulla suscipit expedita voluptatem quidem ea excepturi? Esse veniam error, libero doloribus ad magnam aut nisi modi quis ex eum ipsa mollitia cumque similique provident nulla?</p>
+    <h3 id="chapter3">Bölüm 3</h3>
+    <p>Consequuntur cumque tenetur incidunt vero veritatis, blanditiis, ad voluptates magnam illum totam labore ex repudiandae eligendi? Impedit facere suscipit, asperiores nobis vel ex, omnis quod labore, ipsam harum at dignissimos!</p>
+    <p>Itaque est ratione voluptatibus id et, perferendis architecto perspiciatis maiores aliquid eaque quam debitis aut enim voluptatem doloremque iusto dolorem possimus delectus atque odio nihil. Tempore voluptatum minima in perspiciatis!</p>
+    <p>Maiores numquam ea suscipit minima eveniet voluptatum repellat sit quia, eius voluptas perferendis hic asperiores ratione qui id tempora! Fuga quod quam perspiciatis perferendis distinctio eius sapiente, mollitia qui deleniti?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias exercitationem voluptas quisquam animi cupiditate tempora voluptatum dolorum qui vitae id totam corrupti dicta debitis possimus, odit eos. Vitae, voluptates possimus.</p>
+    <p>Voluptatum perspiciatis voluptate voluptas nulla suscipit expedita voluptatem quidem ea excepturi? Esse veniam error, libero doloribus ad magnam aut nisi modi quis ex eum ipsa mollitia cumque similique provident nulla?</p>
+    <p>Consequuntur cumque tenetur incidunt vero veritatis, blanditiis, ad voluptates magnam illum totam labore ex repudiandae eligendi? Impedit facere suscipit, asperiores nobis vel ex, omnis quod labore, ipsam harum at dignissimos!</p>
+    <p>Itaque est ratione voluptatibus id et, perferendis architecto perspiciatis maiores aliquid eaque quam debitis aut enim voluptatem doloremque iusto dolorem possimus delectus atque odio nihil. Tempore voluptatum minima in perspiciatis!</p>
+    <p>Maiores numquam ea suscipit minima eveniet voluptatum repellat sit quia, eius voluptas perferendis hic asperiores ratione qui id tempora! Fuga quod quam perspiciatis perferendis distinctio eius sapiente, mollitia qui deleniti?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias exercitationem voluptas quisquam animi cupiditate tempora voluptatum dolorum qui vitae id totam corrupti dicta debitis possimus, odit eos. Vitae, voluptates possimus.</p>
+    <p>Voluptatum perspiciatis voluptate voluptas nulla suscipit expedita voluptatem quidem ea excepturi? Esse veniam error, libero doloribus ad magnam aut nisi modi quis ex eum ipsa mollitia cumque similique provident nulla?</p>
+
+
+    <h2>Example</h2>
+
+    <img src ="./assert/kızkulesi.png" >
+
+    <h2>Attributes</h2>
+
+    <h3>The <code>alt</code> Attribute</h3>
+    <img src="./assert/kızkulesi.png" alt="Kız kulesi">
+
+    <h3>The <code>width</code> and <code>height</code></h3>
+    <img src="./assert/kızkulesi.png" width="450" height="300">
+
+    <h3>The <code>alt</code> Attribute</h3>
+    <img src="./assert/kızkulesi.png" alt="Kız kulesi">
+
+    <h3>The <code>srcset</code>Attribute</h3>
+    <img src="./assert/kızkulesi.png" srcset="./assert/kızkulesi.png,./assert/kızkulesi@2x.png 2x ,./assert/kızkulesi@3x.png 3x">
+    <h3>The <code>loading</code> Attribute</h3>
+    <img src="./assert/kızkulesi.png" loading="lazy">
+
+    <h2>The HTML <code>picture</code> Element</h2>
+    <picture>
+        <source srcset="./assert/kızkulesi.avif" type="image/avif" width="950">
+        <source srcset="./assert/kızkulesi.webp" type="image/webp" width="850">
+        <source srcset="./assert/kızkulesi.png" type="image/jpeg" width="750">
+        <img src="./assert/kızkulesi.png" width="650">
+    </picture>
+
+    <h1>HTML Tables</h1>
+    <table>
+        <caption>Table</caption>
+        <colgroup>
+        <col span="2" style="background-color: #eed6d8;">
+        <col style="background-color: #d6eedd;">
+        </colgroup>
+        <thead>
+            <tr>
+                <td>Pazartesi</td>
+                <td>Salı</td>
+                <td>Çarşamba</td>
+                <td>Perşembe</td>
+                <td>Cuma</td>
+                <td>Cumartesi</td>
+                <td>Pazar</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">1</td>
+                <td rowspan="2">3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="6">Toplam:</th>
+                <th>900</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <table border="1">
+        <tr>
+          <td>
+            <table border="2">
+              <tr>
+                <td>İç Tablo Hücresi 1</td>
+                <td>İç Tablo Hücresi 2</td>
+              </tr>
+            </table>
+          </td>
+          <td>Dış Tablo Hücresi</td>
+        </tr>
+      </table>
+</body>
+</html>
