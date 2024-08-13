@@ -251,18 +251,242 @@
         </tfoot>
     </table>
 
-    <table border="1">
-        <tr>
-          <td>
-            <table border="2">
-              <tr>
-                <td>İç Tablo Hücresi 1</td>
-                <td>İç Tablo Hücresi 2</td>
-              </tr>
-            </table>
-          </td>
-          <td>Dış Tablo Hücresi</td>
-        </tr>
-      </table>
+    <h1>HTML Lists</h1>
+
+    <h2>Unordered List</h2>
+    <ul>
+    <li>Elma</li>
+    <li>Süt</li>
+    <li>Yumurta</li>
+    <li>Ekmek</li>
+    <ul>
+        <li>Elma</li>
+        <li>Süt</li>
+        <li>Yumurta</li>
+        <li>Ekmek</li>
+        </ul>
+    </ul>
+
+    <h2>Ordered List</h2>
+    <ol>
+    <li>Elma</li>
+    <li>Süt</li>
+    <li>Yumurta</li>
+    <li>Ekmek</li>
+      <ol>
+        <li>Elma</li>
+        <li>Süt</li>
+        <li>Yumurta</li>
+        <li>Ekmek</li>
+     </ol>
+    </ol>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperTEXT Style Sheets</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JavaScript</dt>
+        <dd>Web sayfalarına interaktif davranışlar eklemek için kullanılan bir programlama dilidir.</dd>
+    </dl>
+
+    <h1>HTML Iframe</h1>
+    <iframe src="./sinif_tablosu.html" frameborder="0" width="500" height="400" style="border: 2px solid gray;"></iframe>
+
+    <h1>HTML Semantic Elements</h1>
+
+    <header>
+        <h2>header</h2>
+        <a href="#">Logo</a>
+        <nav>
+            <h3>nav</h3>
+            <a href="#">Ana Sayfa</a>
+            <a href="#">Hakkımda</a>
+            <a href="#">Makaleler</a>
+            <a href="#">İletişim</a>
+        </nav>
+    </header>
+    <main>
+        <h2>main</h2>
+            <section>
+            <h3>section</h3>
+            <article>
+                <h4>article</h4>
+                <figure>
+                    <img src="./assert/kızkulesi.png" alt="Kız kulesi">
+                    <figcaption>Kız kulesi</figcaption>
+                </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tenetur optio commodi atque. Impedit eligendi cumque autem totam itaque deserunt similique. Rerum quia necessitatibus quae! Necessitatibus placeat iste deleniti repellat.</p>
+            </article>
+        </section>
+        <section>
+            <h3>section</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias quam nulla similique, nam qui est architecto. Enim deleniti ea et possimus laudantium, molestiae ipsam voluptate vitae perspiciatis, quaerat eos!</p>
+        </section>
+        <aside>
+            <h2>aside</h2>
+            <nav>
+                <a href="#">Günlük</a>
+                <a href="#">Tasarım</a>
+                <a href="#">Yazılım</a>
+            </nav>
+        </aside>
+    </main>
+    <footer>
+        Tüm hakları saklıdır.
+    </footer>
+
+    <h1>HTML Forms</h1>
+
+    <h2>Example</h2>
+    <form>
+        <fieldset>
+            <legend>Kişisel:</legend>
+            <div>
+                <label for="fullname">İsim ve Soyisim:</label>
+                <input type="text" id="fullname">
+            </div>
+            <div>
+                <label for="gender">Cinsiyet:</label>
+                <input type="radio" name="gender" value="female"> Kadın
+                <input type="radio" name="gender" value="male"> Erkek
+            </div>
+            <div>
+                <label for="birthday">Doğum Tarihi:</label>
+                <input type="date" id="birthday">
+            </div>
+            <div>
+                <label for="city">Şehir:</label>
+                <select id="city">
+                    <option value="">Seçiniz..</option>
+                    <optgroup label="Marmara">
+                        <option value="İstanbul">İstanbul</option>
+                        <option value="Edirne">Edirne</option>
+                        <option value="Tekirdağ">Tekirdağ</option>
+                    </optgroup>
+                    <optgroup label="Ege">
+                        <option value="İzmir">İzmir</option>
+                        <option value="Muğla">Muğla</option>
+                        <option value="Aydın">Aydın</option>
+                    </optgroup>
+                    <optgroup label="Akdeniz">
+                        <option value="Antalya">Antalya</option>
+                        <option value="Adana">Adana</option>
+                        <option value="Mersin">Mersin</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label>Hobiler:</label>
+                <input type="checkbox" name="hobbies[]" value="sport"> Spor
+                <input type="checkbox" name="hobbies[]" value="music"> Müzik
+                <input type="checkbox" name="hobbies[]" value="read"> Okuma
+            </div>
+            <div>
+                <label for="cv">Özgeçmiş:</label>
+                <input type="file" id="cv">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>İletişim:</legend>
+            <div>
+                <label for="email">E-posta:</label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone">
+            </div>
+            <div>
+                <label for="address">Adres:</label>
+                <textarea id="address"></textarea>
+            </div>
+        </fieldset>
+        <div>
+            <label for="password">Şifre:</label>
+            <input type="password" id="password">
+        </div>
+        <div>
+            <button type="submit">Kayıt ol</button>
+            <button type="reset">Temizle</button>
+        </div>
+    </form>
+    <h2>HTML Input Types</h2>
+    
+    <h3>Input Type Number</h3>
+    <input type="color">
+
+    <h3>Input Type Number</h3>
+    <input type="number">
+
+    <h3>Input Type Range</h3>
+    <input type="range">
+
+    <h3>Input Type Tıme</h3>
+    <input type="time">
+
+    <h2>HTML Input Attributes</h2>
+
+    <h3>Input <code>value</code> Attibute</h3>
+    <input type="text" value="John">
+
+    <h3>Input <code>readonly</code> Attibute</h3>
+    <input type="text" value="Doe" readonly>
+
+    <h3>Input <code>disabled</code> Attibute</h3>
+    <input type="text" value="28" disabled>
+
+    <h3>Input <code>placeholder</code> Attibute</h3>
+    <input type="tel" placeholder="500 123 4567">
+
+    <h2>Kayıt Formu</h2>
+
+<form action="./sinif_tablosu.html" method="get">
+  <!-- Text Input -->
+  <label for="fname">Ad:</label><br>
+  <input type="text" id="fname" name="fname" required><br>
+
+  <label for="lname">Soyad:</label><br>
+  <input type="text" id="lname" name="lname" required><br>
+
+  <!-- Email Input -->
+  <label for="email">E-posta:</label><br>
+  <input type="email" id="email" name="email" required><br>
+
+  <!-- Password Input -->
+  <label for="pwd">Şifre:</label><br>
+  <input type="password" id="pwd" name="pwd" minlength="8" required><br>
+
+  <!-- Date Input -->
+  <label for="dob">Doğum tarihi:</label><br>
+  <input type="date" id="dob" name="dob" required><br>
+
+  <!-- Radio Button Input -->
+  <p>Cinsiyet:</p>
+  <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Erkek</label><br>
+  <input type="radio" id="female" name="gender" value="female" required>
+  <label for="female">Kadın</label><br>
+
+  <!-- Checkbox Input -->
+  <input type="checkbox" id="terms" name="terms" required>
+  <label for="terms">Kullanım şartlarını kabul ediyorum.</label><br>
+
+  <!-- Textarea Input -->
+  <label for="message">Mesaj:</label><br>
+  <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+
+  <!-- Select Input -->
+  <label for="country">Ülke:</label><br>
+  <select id="country" name="country">
+    <option value="turkey">Türkiye</option>
+    <option value="usa">ABD</option>
+    <option value="germany">Almanya</option>
+  </select><br>
+
+  <!-- Submit Button -->
+  <input type="submit" value="Gönder">
+  <input type="reset" value="Temizle">
+</form>
+
 </body>
 </html>

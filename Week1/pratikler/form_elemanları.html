@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı Bilgileri Formu</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <!-- Text Input -->
+        <label for="fname">Ad:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+      
+        <label for="lname">Soyad:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+      
+        <!-- Email Input -->
+        <label for="email">E-posta:</label><br>
+        <input type="email" id="email" name="email" required><br>
+      
+        <!-- Password Input -->
+        <label for="pwd">Şifre:</label><br>
+        <input type="password" id="pwd" name="pwd" minlength="8" required><br>
+      
+        <!-- Radio Button Input -->
+        <p>Cinsiyet:</p>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Erkek</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Kadın</label><br>
+      
+        <!-- Select Input -->
+        <label for="fruit">Meyve:</label><br>
+            <select id="fruit" name="fruit">
+               <option value="elma">Elma</option>
+               <option value="armut">Armut</option>
+               <option value="kiraz">Kiraz</option>
+               <option value="kayısı">Kayısı</option>
+               <option value="muz">Muz</option>
+            </select><br>
+        <!-- Textarea Input -->
+        <label for="message">Mesaj:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+      
+        <!-- Submit Button -->
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Temizle">
+      </form>
+</body>
+</html>
