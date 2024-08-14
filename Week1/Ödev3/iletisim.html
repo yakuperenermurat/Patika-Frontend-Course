@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+</head>
+<body>
+    <h1>İletişim</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hakkinda.html">Hakkımızda</a></li>
+            <li><a href="servisler.html">Hizmetler</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Bize Ulaşın</h2>
+        <p>Aşağıdaki bilgilerden bize ulaşabilirsiniz:</p>
+        <ul>
+            <li>Adres: Postane Mahallesi, Şahin Sokak, No: 15</li>
+            <li>Telefon: (530) 111-5209</li>
+            <li>E-posta: info@edu.tr.com</li>
+        </ul>
+        <h2>İletişim Formu</h2>
+        <form action="/sumbit" method="post">
+            <label for="name">Adınız:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">E-posta:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Mesajınız:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+            <input type="submit" value="Gönder">
+            <input type="reset" value="Temizle">
+        </form>
+    </section>
+</body>
+</html>
