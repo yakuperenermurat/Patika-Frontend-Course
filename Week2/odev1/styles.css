@@ -1,0 +1,128 @@
+/* Genel Stil */
+/* Sayfa genelinde kullanılacak yazı tipi, arka plan rengi ve kenar boşlukları ayarlanır */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+/* Üst başlık ve menü stil ayarları */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Menü stil ayarları */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content */
+/* Ana içerik alanı stil ayarları */
+main {
+    padding: 20px;
+}
+
+/* Başlıkların renk ve hizalama ayarları */
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Kartları taşıyan konteynerin stil ayarları */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Kartların stil ayarları */
+.card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Kart içindeki resimlerin stil ayarları */
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Kart başlıklarının stil ayarları */
+.card h3 {
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Kart paragraflarının stil ayarları */
+.card p {
+    color: #666;
+}
+
+/* Post Content */
+/* Blog gönderisi içerik alanının stil ayarları */
+.post-content {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Blog gönderisi içindeki resimlerin stil ayarları */
+.post-content img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Blog gönderisi başlıklarının stil ayarları */
+.post-content h3 {
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Blog gönderisi paragraflarının stil ayarları */
+.post-content p {
+    color: #666;
+}
+
+/* Footer */
+/* Sayfa altbilgisinin stil ayarları */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

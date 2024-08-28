@@ -1,0 +1,128 @@
+/* Genel Stil */
+/* Sayfa genelinde kullanılan yazı tipi, arka plan rengi ve kenar boşlukları ayarlanır */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0e0e0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Başlık ve Menü */
+/* Sayfanın üst kısmındaki başlık ve menünün stil ayarları */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Menü stil ayarları */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Bölümler */
+/* Her bir bölüm için genel stil ayarları */
+section {
+    padding: 50px 20px;
+}
+
+/* Anasayfa Bölümü */
+/* Anasayfa bölümünün stil ayarları */
+#home {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* Anasayfa bölümü içindeki resim stil ayarları */
+#home img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Alıntı stil ayarları */
+blockquote {
+    font-style: italic;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Biyografi Bölümü */
+/* Biyografi bölümünün stil ayarları */
+#info {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Biyografi bölümü içeriği */
+.biography {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Biyografi resmi stil ayarları */
+.biography img {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+/* Biyografi metni stil ayarları */
+.biography p {
+    max-width: 600px;
+    text-align: left;
+    margin: 20px 0;
+}
+
+/* Eserler Bölümü */
+/* Eserler bölümünün stil ayarları */
+#books {
+    background-color: #ddd;
+    text-align: center;
+}
+
+/* Eserler listesinin stil ayarları */
+#books ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Eserler listesindeki her bir öğenin stil ayarları */
+#books ul li {
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Sayfa Altbilgisi */
+/* Sayfanın alt kısmındaki bilgilendirme metni stil ayarları */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}

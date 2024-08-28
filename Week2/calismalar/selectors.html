@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        .c1{
+            padding-left: 8px;
+            border-left: 2px solid orange;
+        }
+        .c2.c3{
+            padding-left: 8px;
+            border-left: 5px solid orange;
+        }
+        .c4 .c5{
+            padding: 1px 3px;
+            border-left: 3px solid orange;
+        }
+        #paragraph{
+            padding-left: 8px;
+            border-left: 2px solid orange;
+        }
+        p.c6{
+            padding-left: 8px;
+            border-left: 2px solid orange;
+        }
+        p > mark{
+            padding: 1px 3px;
+            border-left: 3px solid orange;
+        }
+        [href="https://patika.dev"]{
+            padding: 1px 3px;
+            border-left: 4px solid orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+
+    <h2>.class</h2>
+    
+    <p class="c1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur,</p>
+
+    <h2>.class1.class2</h2>
+    <p class="c2 c3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, exercitationem quod. Ullam vel quas atque ea illo temporibus iste delectus vitae ratione doloremque in, illum, quidem eveniet sapiente inventore facilis.</p>
+    <p class="c2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel deleniti at magni quae facere, exercitationem in aspernatur odio ut excepturi nulla reiciendis amet perferendis ipsam libero illum, pariatur impedit?</p>
+
+    <h2>.class.class2</h2>
+    <p class="c4">Lorem ipsum <span class="c5">sit amet consectetur adipisicing elit. </span> Cum unde fuga deserunt nesciunt pariatur quibusdam eaque voluptatibus voluptatem deleniti! Nihil autem minus accusantium ducimus deserunt suscipit, eum soluta iste qui!</p>
+
+    <h2>#id</h2>
+    <p id="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto officiis, tenetur, nisi eveniet debitis odio consectetur, aliquid similique possimus dolor ipsam accusamus. Ipsa reprehenderit iusto voluptatem, in odio adipisci laudantium?</p>
+
+    <h2>element.class</h2>
+    <p class="c6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam id optio atque suscipit necessitatibus ratione similique nisi aliquid voluptatum, saepe laborum dolor fuga deleniti sapiente sunt minima temporibus quo illum.</p>
+    <div class="c6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam id optio atque suscipit necessitatibus ratione similique nisi aliquid voluptatum, saepe laborum dolor fuga deleniti sapiente sunt minima temporibus quo illum.</div>
+    <h2>element>element</h2>
+    <p>Lorem ipsum dolor sit<mark> amet consectetur adipisicing elit.</mark> amet consectetur adipisicing elit. Deserunt temporibus, soluta ex ut officiis labore, molestias autem odit quod vero incidunt porro officia dolorem, consequuntur fugit eos dolor repudiandae. Iusto.</p>
+    
+    <h2>[attribute]</h2>
+    <p><a href="https://patika.dev">Patika</a></p>
+    <p><a href="https://apple.dev">Apple</a></p>
+
+        <h2>[attribute]= "value"</h2>
+    <p><a href="https://patika.dev">Patika</a></p>
+    <p><a href="https://apple.dev">Apple</a></p>
+</body>
+</html>
