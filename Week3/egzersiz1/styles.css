@@ -1,138 +1,140 @@
-/* Body'e padding eklendi, navbar sabit olduğu için içerik ile birleşmemesi sağlandı */
+/* Body'ye padding eklendi, navbar sabit olduğu için içerik ile birleşmemesi sağlandı */
 body {
-    background-color: #fafafa;
-    padding-top: 54px;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Navbar ayarları */
-  .navbar {
-    background-color: white;
-    height: 54px;
-  }
-  
-  /* Logo margin ayarı */
+  background-color: #fafafa;
+  padding-top: 54px;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar ayarları */
+.navbar {
+  background-color: white;
+  height: 54px;
+}
+
+/* Logo margin ayarı, sola hizalanması sağlandı */
+.navbar .navbar-brand {
+  margin-left: 50px;
+}
+
+/* Arama çubuğu ayarları ve placeholder ikonu */
+.navbar .form-inline .empty {
+  background: url('assets/search_icon.png') no-repeat center right 8px;
+  background-size: 14px;
+  width: 216px;
+  height: 28px;
+  border-radius: 4px;
+  padding-left: 8px;
+  margin-left: 5px; /* Arama çubuğuna margin eklendi */
+}
+
+/* Profil resmi küçük boyut */
+.profile-pic {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+}
+
+/* Hikayeler kısmı ayarları */
+.stories .story-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #e91e63;
+}
+
+/* Hikaye metni ayarları */
+.story {
+  text-align: center;
+}
+
+.storytext {
+  font-size: 12px;
+  color: #333;
+}
+
+/* Kart başlık ve altlık renk ayarı */
+.card-header, .card-footer {
+  background-color: white;
+}
+
+/* Küçük profil resmi */
+.profile-pic-sm {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+/* Orta alan maksimum yükseklik ayarı */
+.middlearea {
+  margin-top: 20px;
+  max-height: 200px !important; /* Maksimum yükseklik ayarlandı */
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Sağ panelin sabit pozisyon ayarı */
+.stickysidebar {
+  position: sticky;
+  top: 54px;
+}
+
+/* Sağ panel arkaplan ve kenarlık ayarı */
+.rightpanel {
+  background-color: white;
+  border: none;
+}
+
+/* Yorum paylaş metni sağa hizalandı */
+.comment-text {
+  color: #0095f6;
+  float: right;
+}
+
+/* Container maksimum genişlik ayarı */
+.container {
+  max-width: 1000px;
+  margin-top: 2rem;
+}
+
+/* Kart margin ayarı */
+.card {
+  margin-bottom: 20px;
+}
+
+/* Hikayeler bölümü margin ayarı */
+.stories {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Navbar elemanları margin ayarı */
+.navbar-nav .nav-item .nav-link {
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+/* Küçük ekran ayarları */
+@media (max-width: 768px) {
   .navbar .navbar-brand {
-    margin-left: 192px;
-  }
-  
-  /* Arama çubuğu ayarları ve placeholder ikonu */
-  .navbar .form-inline .empty {
-    background: url('assets/search_icon.png') no-repeat center right 8px;
-    background-size: 14px;
-    width: 216px;
-    height: 28px;
-    border-radius: 4px;
-    padding-left: 8px;
-    margin-left: 5px; /* Arama çubuğuna margin eklendi */
-  }
-  
-  /* Profil resmi küçük boyut */
-  .profile-pic {
-    width: 23px;
-    height: 23px;
-    border-radius: 50%;
-  }
-  
-  /* Hikayeler kısmı ayarları */
-  .stories .story-photo {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 2px solid #e91e63;
-  }
-  
-  .story {
-    text-align: center;
-  }
-  
-  .storytext {
-    font-size: 12px;
-    color: #333;
-  }
-  
-  /* Kart başlık ve altlık renk ayarı */
-  .card-header, .card-footer {
-    background-color: white;
-  }
-  
-  /* Küçük profil resmi */
-  .profile-pic-sm {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-  }
-  
-  /* Orta alan maksimum yükseklik ayarı */
-  .middlearea {
-    margin-top: 20px;
-    max-height: 200px !important; /* Önemli olarak işaretlendi */
-  }
-  
-  .card-img-top {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  /* Sağ panelin sabit pozisyon ayarı */
-  .stickysidebar {
-    position: sticky;
-    top: 54px;
-  }
-  
-  /* Sağ panel arkaplan ve kenarlık ayarı */
-  .rightpanel {
-    background-color: white;
-    border: none;
-  }
-  
-  /* Yorum paylaş metni sağa alındı */
-  .comment-text {
-    color: #0095f6;
-    float: right;
-  }
-  
-  /* Container maksimum genişlik ayarı */
-  .container {
-    max-width: 1000px;
-  }
-  
-  /* Kart margin ayarı */
-  .card {
-    margin-bottom: 20px;
-  }
-  
-  /* Hikayeler bölümü margin ayarı */
-  .stories {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  /* Navbar elemanları margin ayarı */
-  .navbar-nav .nav-item .nav-link {
-    margin-left: 5px;
-    margin-top: 2px;
-  }
-  
-  /* Küçük ekran ayarları */
-  @media (max-width: 768px) {
-    .navbar .navbar-brand {
       margin-left: 0;
-    }
-  
-    .stories {
+  }
+
+  .stories {
       flex-wrap: wrap;
-    }
-  
-    .story-photo {
+  }
+
+  .story-photo {
       width: 50px;
       height: 50px;
-    }
-  
-    .profile-pic-sm {
+  }
+
+  .profile-pic-sm {
       width: 30px;
       height: 30px;
-    }
   }
+}
