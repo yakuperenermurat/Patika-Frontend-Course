@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Instagram Clone</title>
+</head>
+<body>
+  <!-- Navbar sabitlenmiş durumda ve arkaplan rengi beyaz, yüksekliği 54px -->
+  <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="Instagram" />
+      </a>
+      <!-- Arama çubuğu ortalanmış ve margin verilmiş -->
+      <form class="form-inline d-flex mx-auto">
+        <input class="form-control empty" type="search" placeholder="Search" aria-label="Search" />
+      </form>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-home"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-facebook-messenger"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-compass"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-heart"></i></a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <img src="profile-picture.jpg" class="profile-pic" alt="Profile Picture" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Ana içerik kısmı ve sağ panel -->
+  <div class="container mt-5 pt-3">
+    <div class="row">
+      <div class="col-lg-7">
+        <!-- Hikayeler bölümü -->
+        <div class="stories d-flex justify-content-around my-3">
+          <div class="story text-center">
+            <img src="story-user1.jpeg" class="story-photo" alt="Story" />
+            <p class="storytext">adilsagir</p>
+          </div>
+          <div class="story text-center">
+            <img src="story-user2.jpg" class="story-photo" alt="Story" />
+            <p class="storytext">mehmetaydın</p>
+          </div>
+          <!-- Daha fazla hikaye -->
+        </div>
+
+        <!-- Gönderiler bölümü -->
+        <div class="card mb-3">
+          <div class="card-header d-flex align-items-center">
+            <img src="profile-picture.jpg" class="mr-3 profile-pic-sm" alt="Profile Picture" />
+            <span><strong>yakuperenermurat</strong></span>
+            <!-- Üç nokta sağda olacak şekilde ayarlandı -->
+            <i class="fas fa-ellipsis-h ml-auto"></i>
+          </div>
+          <img src="post-image.jpg" class="card-img-top" alt="Post Image" />
+          <div class="card-body">
+            <div class="d-flex">
+              <i class="far fa-heart mr-3"></i>
+              <i class="far fa-comment mr-3"></i>
+              <i class="far fa-paper-plane"></i>
+              <!-- Bookmark ikonu sağa alınmış -->
+              <i class="far fa-bookmark ml-auto"></i>
+            </div>
+            <p class="mt-2"><strong>yakuperenermurat</strong> Rize'nin yaylaları bir harika!</p>
+            <p class="text-muted">15 yorumu gör</p>
+            <p class="mb-0"><strong>mehmetaydın</strong> Harika bir manzara!</p>
+            <p class="text-muted">2 SAAT ÖNCE</p>
+          </div>
+        </div>
+        <!-- Daha fazla gönderi -->
+      </div>
+      
+      <!-- Sağ panel -->
+      <div class="col-lg-3 offset-lg-2 d-none d-lg-block">
+        <div class="card stickysidebar">
+          <div class="card-body d-flex align-items-center">
+            <img src="profile-picture.jpg" class="mr-3 profile-pic-sm" alt="Profile Picture" />
+            <div>
+              <strong>yakuperenermurat</strong><br />
+              <small class="text-muted">Yakup Eren Ermurat</small>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-3 rightpanel">
+          <div class="card-header">
+            <strong>Senin İçin Öneriler</strong>
+            <!-- Tümünü Gör sağa alındı -->
+            <a href="#" class="float-right">Tümünü Gör</a>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <img src="story-user1.jpeg" class="mr-3 profile-pic-sm" alt="Profile Picture" />
+              <div>
+                <strong>adilsagir</strong><br />
+                <small class="text-muted">yakuperenermurat takip ediyor</small>
+              </div>
+              <!-- Takip Et butonu sağa alınmış -->
+              <a href="#" class="btn btn-link p-0">Takip Et</a>
+            </div>
+            <!-- Daha fazla öneri -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
