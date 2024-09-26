@@ -1,26 +1,5 @@
-// Mevcut listedeki öğelere X butonu ve işaretleme işlevi ekleyelim
 document.addEventListener('DOMContentLoaded', function() {
-    const listItems = document.querySelectorAll('#list li'); // Mevcut liste elemanlarını seç
-    
-    listItems.forEach(item => {
-        // Mevcut liste elemanlarına X butonu ekle
-        const span = document.createElement("span");
-        const txt = document.createTextNode("\u00D7"); // X işareti oluştur
-        span.className = "close"; // X butonuna class ekle
-        span.appendChild(txt);
-        item.appendChild(span);
-
-        // Silme işlevi (X butonuna tıklandığında)
-        span.onclick = function () {
-            const div = this.parentElement; // Butonun bağlı olduğu li öğesini bul
-            div.remove(); // Li öğesini sil
-        };
-
-        // İşaretleme işlevi (tıkladığında üstünü çiz)
-        item.addEventListener('click', function() {
-            item.classList.toggle('checked'); // checked sınıfını ekle/kaldır
-        });
-    });
+    loadListFromLocalStorage(); // Sayfa yüklendiğinde listeyi yükle
 });
 
 // Yeni yapılacak eleman eklemek
@@ -41,25 +20,81 @@ function newElement() {
     list.appendChild(li); // Listeye yeni elemanı ekle
 
     // Yeni X butonu ekle
-    const span = document.createElement("span");
-    const txt = document.createTextNode("\u00D7");
-    span.className = "close"; // Class ekle
-    span.appendChild(txt);
-    li.appendChild(span);
+    addCloseButton(li);
+    addToggleChecked(li);
 
-    // Silme işlevi
-    span.onclick = function () {
-        const div = this.parentElement; // Butonun bağlı olduğu li öğesini bul
-        div.remove(); // Li öğesini sil
-    };
-
-    // Eleman tıklanınca üstü çizilecek
-    li.addEventListener("click", function () {
-        li.classList.toggle("checked"); // checked sınıfını ekle/kaldır
-    });
+    // Local Storage'a ekleyelim
+    saveListToLocalStorage();
 
     document.getElementById("task").value = ""; // Input alanını temizler
     showToast("Listeye başarıyla eklendi.", "success"); // Başarı toast bildirimi
+}
+
+// Listeye X butonu eklemek için fonksiyon
+function addCloseButton(item) {
+    const span = document.createElement("span");
+    const txt = document.createTextNode("\u00D7"); // X işareti oluştur
+    span.className = "close"; // X butonuna class ekle
+    span.appendChild(txt);
+    item.appendChild(span);
+
+    // Silme işlevi (X butonuna tıklandığında)
+    span.onclick = function () {
+        const div = this.parentElement; // Butonun bağlı olduğu li öğesini bul
+        div.remove(); // Li öğesini sil
+        saveListToLocalStorage(); // Local Storage'ı güncelle
+    };
+}
+
+// İşaretleme işlevi eklemek için fonksiyon
+function addToggleChecked(item) {
+    item.addEventListener('click', function() {
+        item.classList.toggle('checked'); // checked sınıfını ekle/kaldır
+        saveListToLocalStorage(); // İşaretleme durumunu Local Storage'a kaydet
+    });
+}
+
+// Local Storage'a listeyi kaydetmek
+function saveListToLocalStorage() {
+    const listItems = document.querySelectorAll('#list li');
+    const tasks = [];
+
+    listItems.forEach(item => {
+        tasks.push({
+            text: item.firstChild.textContent,
+            checked: item.classList.contains('checked') // İşaretli olup olmadığını kaydet
+        });
+    });
+
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+}
+
+// Local Storage'dan listeyi yüklemek
+function loadListFromLocalStorage() {
+    const storedTasks = localStorage.getItem('tasks');
+    const list = document.getElementById('list');
+
+    // Mevcut listeyi temizle (sayfa yenilenmesinde yinelenen verileri engellemek için)
+    list.innerHTML = "";
+
+    if (storedTasks) {
+        const tasks = JSON.parse(storedTasks);
+        
+        tasks.forEach(task => {
+            const li = document.createElement('li');
+            const textNode = document.createTextNode(task.text);
+            li.appendChild(textNode);
+
+            if (task.checked) {
+                li.classList.add('checked');
+            }
+
+            addCloseButton(li);
+            addToggleChecked(li);
+
+            list.appendChild(li);
+        });
+    }
 }
 
 // Toast bildirimini göstermek
