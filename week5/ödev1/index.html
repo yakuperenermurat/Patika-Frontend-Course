@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+    Bu bölümde sayfanın meta bilgileri ve stil dosyaları tanımlanıyor.
+    charset: Sayfanın karakter setini UTF-8 olarak ayarlıyor.
+    viewport: Sayfanın mobil uyumluluğunu sağlıyor.
+    link: Harici CSS dosyasını ve Bootstrap framework'ünü dahil ediyor.
+    -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- Sayfanın başlığını belirler -->
+    <title>Patika+ Javascript Saat Ödevi</title>
+  </head>
+  <body class="bg-dark">
+    <!--
+    Ana sayfa yapısı buradan başlıyor.
+    text-center: Sayfa içeriğini ortalamak için Bootstrap sınıfı kullanılıyor.
+    -->
+    <div class="text-center">
+      <!--
+      Bu img etiketi, bir resim içerir. class="rounded" ifadesi resmin köşelerini yuvarlar.
+      -->
+      <img
+        src="https://cdn.prod.website-files.com/6097e0eca1e87557da031fef/65ddd0b63551335908fb216e_patika%20logo.png"
+        alt=""
+        class="rounded"
+      />
+      <!--
+      Kullanıcının adını göstermek için bir alan hazırlanıyor.
+      "Merhaba, [kullanıcı adı]! Hoş geldin!" ifadesi burada dinamik olarak yazılacak.
+      -->
+      <div class="text1 text-center">
+        Merhaba, <strong><span id="myName"></span></strong>! Hoş geldin!
+      </div>
+      <!--
+      Saat ve gün bilgisi buraya dinamik olarak yazılacak.
+      -->
+      <div id="myClock" class="clock" onload="showTime()"></div>
+      <!--
+      Bu bölümde kullanıcıya verilen ödev hakkında bilgi veriliyor.
+      -->
+      <div class="text2 text-center">
+        tarihinde
+        <strong>Patika+ Frontend Web Development </strong>'nın
+        Javascript bölümü 1. Ödevindesiniz.
+      </div>
+    </div>
+    <!--
+    JavaScript dosyasını dahil eder. Saat ve gün fonksiyonları bu dosya içinde çalışacak.
+    -->
+    <script src="clock.js"></script>
+  </body>
+</html>

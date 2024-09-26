@@ -1,0 +1,81 @@
+/* 
+Body'nin arka plan rengini siyah yapar.
+Tüm sayfa boyunca siyah bir arka plan görünümü sağlar.
+*/
+body {
+    background: yellow;
+  }
+  
+  /* 
+  Saatin (clock) stilini ayarlar.
+  text-align: Saat metnini yatayda ortalar.
+  color: Yazı rengi turuncuya yakın bir ton (#e98208) olarak ayarlanır.
+  font-size: Saatin boyutu 60px olarak ayarlanır.
+  font-family: Saatin yazı tipi klasik serif fontlarından seçilir.
+  letter-spacing: Harfler arasına 7px boşluk eklenir, böylece metin geniş görünür.
+  */
+  .clock {
+    position: relative;
+    text-align: center;
+    color: #e98208;
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 7px;
+  }
+  
+  /* 
+  Kullanıcıya hoş geldin mesajının stilini ayarlar.
+  text-align: Mesajı ortalar.
+  color: Mesaj rengi yine turuncu (#e98208) olarak ayarlanır.
+  font-size: Mesajın boyutu 50px olur.
+  font-family: Serif fontlarından biri seçilir.
+  letter-spacing: Harfler arasında 7px boşluk eklenir.
+  */
+  .text1 {
+    position: relative;
+    text-align: center;
+    color: #e98208;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 7px;
+  }
+  
+  /* 
+  Alt metin (text2) stilini ayarlar.
+  text-align: Metni ortalar.
+  color: Metin rengi yine turuncu (#e98208).
+  font-size: Alt metnin boyutu 40px olarak ayarlanır.
+  font-family: Yine klasik serif fontları kullanılır.
+  letter-spacing: Harfler arasında 7px boşluk olur.
+  margin-right ve margin-left: Metin kutusunun sağdan ve soldan 100px boşluk bırakmasını sağlar.
+  */
+  .text2 {
+    position: relative;
+    text-align: center;
+    color: #e98208;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 7px;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  
+  /* 
+  Resimlerin stilini ayarlar.
+  margin-top: Resmin üstten 120px boşluk bırakmasını sağlar.
+  width: Resim genişliği sayfanın %17'si kadar olur.
+  */
+  img {
+    /* Resmin genişliğini sayfanın %40'ı olarak ayarlar, ekran genişliğine göre büyür/küçülür */
+    width: 40%;
+    /* Resmin genişliğinin %100'den büyük olmamasını sağlar */
+    max-width: 100%;
+    /* Oranlı bir şekilde yükseklik ayarlar */
+    height: auto;
+    /* Resmi sayfa ortasında göstermek için margin ayarları */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px; /* Üstten biraz boşluk bırak */
+}
+  
