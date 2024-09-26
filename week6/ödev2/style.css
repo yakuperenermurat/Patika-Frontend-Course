@@ -1,0 +1,74 @@
+/* Tüm elementlerin kutu boyutlandırması aynı olacak şekilde ayarlanıyor */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Body'nin genel stili */
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f5f8;
+    font-family: "Zilla Slab", serif;
+  }
+  
+  /* Menü başlığı stili */
+  h2 {
+    font-family: "Great Vibes", cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: #ff6a23;
+  }
+  
+  .menu {
+    margin-top: 20px;
+  }
+  
+  /* Filtre butonları için container stili */
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+  }
+  
+  .btn-item {
+    margin-left: 15px;
+  }
+  
+  /* Menüdeki fotoğrafların stilini ayarlıyoruz */
+  .photo {
+    width: 30%;
+    height: 175px;
+    object-fit: cover;
+    border: 0.25rem solid black;
+    border-radius: 10px;
+  }
+  
+  /* Menü öğeleri için stil */
+  .menu-items {
+    display: flex;
+    margin: 20px 0;
+  }
+  
+  .menu-info {
+    margin-left: 20px;
+    width: 100%;
+  }
+  
+  /* Menü başlığı ve fiyat bölümü */
+  .menu-title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+  }
+  
+  /* Menü başlığının rengi */
+  h4 {
+    color: #e00a00;
+  }
+  
+  /* Menü açıklama bölümü */
+  .menu-text {
+    padding-top: 20px;
+  }
+  
