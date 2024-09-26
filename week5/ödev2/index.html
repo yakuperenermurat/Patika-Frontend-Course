@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Sayfanın karakter setini ve responsive özelliklerini ayarlayan meta bilgileri -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Drum Kit</title>
+    <!-- Stil dosyasını sayfaya bağlar -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Başlık -->
+    <h1>Play Your Dream Song</h1>
+
+    <!-- Davul resmi -->
+    <img src="drum.png" alt="Drum Image" class="drum-image">
+
+    <!-- Davul seti tuşları -->
+    <div class="drum-kit">
+        <div class="key" data-key="65">
+            <span>A</span>
+            <p>Clap</p>
+        </div>
+        <div class="key" data-key="83">
+            <span>S</span>
+            <p>Hi-Hat</p>
+        </div>
+        <div class="key" data-key="68">
+            <span>D</span>
+            <p>Kick</p>
+        </div>
+        <div class="key" data-key="70">
+            <span>F</span>
+            <p>Snare</p>
+        </div>
+        <div class="key" data-key="71">
+            <span>G</span>
+            <p>Tom</p>
+        </div>
+        <div class="key" data-key="72">
+            <span>H</span>
+            <p>Ride</p>
+        </div>
+        <div class="key" data-key="74">
+            <span>J</span>
+            <p>Tink</p>
+        </div>
+        <div class="key" data-key="75">
+            <span>K</span>
+            <p>Open Hat</p>
+        </div>
+        <div class="key" data-key="76">
+            <span>L</span>
+            <p>Boom</p>
+        </div>
+    </div>
+
+    <!-- Ses dosyaları -->
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+    <audio data-key="70" src="sounds/snare.wav"></audio>
+    <audio data-key="71" src="sounds/tom.wav"></audio>
+    <audio data-key="72" src="sounds/ride.wav"></audio>
+    <audio data-key="74" src="sounds/tink.wav"></audio>
+    <audio data-key="75" src="sounds/openhat.wav"></audio>
+    <audio data-key="76" src="sounds/boom.wav"></audio>
+
+    <!-- JavaScript dosyasını sayfaya bağlar -->
+    <script src="script.js"></script>
+</body>
+</html>
