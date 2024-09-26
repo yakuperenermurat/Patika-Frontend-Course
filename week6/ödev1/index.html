@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap stil dosyasını ekler -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <title>Yapılacaklar Listesi</title>
+  </head>
+  <body>
+    <!-- Toast bildirim -->
+    <div class="toast-container position-absolute top-0 end-0 p-3">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Bildirim</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">Listeye başarıyla eklendi.</div>
+      </div>
+    </div>
+
+    <!-- To-do List Başlığı ve Ekleme Formu -->
+    <div class="container mt-5">
+      <div class="header">
+        <!-- Patika logosu -->
+        <img
+          src="https://cdn.prod.website-files.com/6097e0eca1e87557da031fef/65ddd0b63551335908fb216e_patika%20logo.png"
+          class="mb-1"
+          alt="Patika Logo"
+        />
+        <!-- Başlık -->
+        <h2>Yapılacaklar Listesi</h2>
+        <!-- Giriş alanı ve ekleme butonu -->
+        <input type="text" id="task" placeholder="Bugün ne yapacaksın?" />
+        <span onclick="newElement()" id="liveToastBtn" class="button">Ekle</span>
+      </div>
+
+      <!-- Yapılacaklar Listesi -->
+      <ul id="list">
+        <li>3 Litre Su İç</li>
+        <li>Ödevleri Yap</li>
+        <li>En Az 3 Saat Kodlama Yap</li>
+        <li>Yemek Yap</li>
+        <li>50 Sayfa Kitap Oku</li>
+      </ul>
+    </div>
+
+    <!-- Bootstrap ve JS dosyaları -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

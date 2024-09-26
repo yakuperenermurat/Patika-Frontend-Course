@@ -1,0 +1,101 @@
+/* Tüm elemanlar için kutu boyutlamasını ayarlar */
+* {
+    box-sizing: border-box;
+}
+
+/* Liste dış boşlukları ve dolgu ayarlarını sıfırlar */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Liste elemanlarının stilini ayarlar */
+ul li {
+    cursor: pointer; /* Liste elemanlarına tıklanabilir işaretçi verir */
+    position: relative; /* İçerisindeki X butonunun konumlandırılması için gerekli */
+    padding: 12px 8px 12px 40px; /* İç boşluklar */
+    background: #eee; /* Arka plan rengi */
+    font-size: 18px; /* Yazı boyutu */
+    transition: 0.2s; /* Geçiş animasyonu */
+    list-style-type: none; /* Madde işaretlerini kaldırır */
+    user-select: none; /* Metnin seçilmesini engeller */
+}
+
+/* Her ikinci liste elemanı için farklı arka plan rengi */
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* Fare ile üzerine gelince arka plan rengini değiştir */
+ul li:hover {
+    background: #ddd;
+}
+
+/* Seçili (checked) liste elemanının stilini ayarlar */
+ul li.checked {
+    background: #276678; /* Seçili liste elemanı için arka plan rengi */
+    color: #fff; /* Seçili elemanın yazı rengi */
+    text-decoration: line-through; /* Üstü çizili yapar */
+}
+
+/* Seçili öğelerin yanında tik işareti ekler */
+ul li.checked::before {
+    content: ""; /* İçerik boş, sadece stil için */
+    position: absolute; /* Yanına tik işaretini ekler */
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+/* X butonunun stilini ayarlar */
+.close {
+    position: absolute; /* X butonunu sağ üst köşeye konumlandırır */
+    right: 0;
+    top: 0;
+    padding: 12px 16px; /* X butonunun iç dolgusunu ayarlar */
+}
+
+/* X butonuna fareyle gelince arka plan rengini değiştirir */
+.close:hover {
+    background-color: #f78501;
+    color: white;
+}
+
+/* Başlık kısmının stilini ayarlar */
+.header {
+    background-color: gold;
+    padding: 30px 40px; /* İç boşluklar */
+    color: white; /* Başlık yazısının rengi */
+    text-align: center; /* Yazıyı ortalar */
+}
+
+/* Giriş (input) alanının stilini ayarlar */
+.header input {
+    margin: 0; /* Kenar boşluğu sıfırlar */
+    border: none; /* Kenarlık yok */
+    width: 75%; /* Genişlik ayarlanır */
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Ekle butonunun stilini ayarlar */
+.button {
+    padding: 10px; /* İç boşluklar */
+    width: 25%; /* Genişlik */
+    background: #d9d9d9; /* Arka plan rengi */
+    color: #555; /* Yazı rengi */
+    text-align: center; /* Yazıyı ortalar */
+    font-size: 16px;
+    cursor: pointer; /* Tıklanabilir işaretçi */
+    transition: 0.3s; /* Geçiş animasyonu */
+}
+
+/* Ekle butonuna fare ile gelince arka plan rengini değiştirir */
+.button:hover {
+    background-color: #bbb;
+}
